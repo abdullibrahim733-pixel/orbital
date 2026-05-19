@@ -1,0 +1,21 @@
+# ninja log v7
+3	105	1779202888832257956	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-mkdir	c6be7b3eceb91da8
+3	105	1779202888832257956	/home/cto22/Projects/orbital/orbital1/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-mkdir	c6be7b3eceb91da8
+105	11504	1779202900231201073	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download	addd88252ed93f0a
+105	11504	1779202900231201073	/home/cto22/Projects/orbital/orbital1/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download	addd88252ed93f0a
+11504	11590	1779202900236201048	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update	711ae184ffbf1f96
+11504	11590	1779202900236201048	/home/cto22/Projects/orbital/orbital1/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update	711ae184ffbf1f96
+11590	11692	1779202900420200132	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch	e7fee7c83b0be1dd
+11590	11692	1779202900420200132	/home/cto22/Projects/orbital/orbital1/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch	e7fee7c83b0be1dd
+11692	11792	1779202900520199634	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure	e8f254952678ea2f
+11692	11792	1779202900520199634	/home/cto22/Projects/orbital/orbital1/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure	e8f254952678ea2f
+11793	11888	1779202900616199156	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build	d111d3383db2fc42
+11793	11888	1779202900616199156	/home/cto22/Projects/orbital/orbital1/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build	d111d3383db2fc42
+11888	11979	1779202900708198698	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install	e81e8676c265d3ae
+11888	11979	1779202900708198698	/home/cto22/Projects/orbital/orbital1/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install	e81e8676c265d3ae
+11979	12066	1779202900795198265	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test	3d350d6ea28da66d
+11979	12066	1779202900795198265	/home/cto22/Projects/orbital/orbital1/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test	3d350d6ea28da66d
+12067	12191	1779202900920197643	CMakeFiles/glfw-populate-complete	babba7d184725ac3
+12067	12191	1779202900920197643	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-done	babba7d184725ac3
+12067	12191	1779202900920197643	/home/cto22/Projects/orbital/orbital1/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate-complete	babba7d184725ac3
+12067	12191	1779202900920197643	/home/cto22/Projects/orbital/orbital1/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-done	babba7d184725ac3

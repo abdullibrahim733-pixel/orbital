@@ -1,0 +1,26 @@
+# ninja log v7
+11	651	1779202929364056833	_deps/glfw-build/src/CMakeFiles/glfw.dir/init.c.o	10413ce799c9bf84
+7	848	1779202929360698810	_deps/glfw-build/src/CMakeFiles/glfw.dir/context.c.o	cdd4d81b038c1a3
+652	1500	1779202930005129213	_deps/glfw-build/src/CMakeFiles/glfw.dir/monitor.c.o	af5531f78dcb53da
+11	1511	1779202929364881530	_deps/glfw-build/src/CMakeFiles/glfw.dir/input.c.o	974b6c40ea40966
+849	1553	1779202930202052708	_deps/glfw-build/src/CMakeFiles/glfw.dir/vulkan.c.o	5b0f37ab51f077ef
+1502	4301	1779202930855678493	_deps/glfw-build/src/CMakeFiles/glfw.dir/window.c.o	95df61efea0dd955
+1553	4793	1779202930906049243	_deps/glfw-build/src/CMakeFiles/glfw.dir/x11_monitor.c.o	13d27bd3035493c
+1511	5034	1779202930864049449	_deps/glfw-build/src/CMakeFiles/glfw.dir/x11_init.c.o	db173cde738cabec
+4794	5611	1779202934147033304	_deps/glfw-build/src/CMakeFiles/glfw.dir/xkb_unicode.c.o	fb1b785888ac6aaa
+5035	5860	1779202934391032105	_deps/glfw-build/src/CMakeFiles/glfw.dir/posix_time.c.o	115ba068bb4de332
+5611	7005	1779202934964029289	_deps/glfw-build/src/CMakeFiles/glfw.dir/posix_thread.c.o	f8ac2b1f2e5c74f6
+5861	11110	1779202935214028061	_deps/glfw-build/src/CMakeFiles/glfw.dir/glx_context.c.o	388aa9fac4980494
+11110	11882	1779202940464107020	_deps/glfw-build/src/CMakeFiles/glfw.dir/osmesa_context.c.o	4f00d8f2a5204db8
+7005	11976	1779202936362022422	_deps/glfw-build/src/CMakeFiles/glfw.dir/egl_context.c.o	7b9b8ddda0b79a95
+11882	14791	1779202941234998513	_deps/glfw-build/src/CMakeFiles/glfw.dir/linux_joystick.c.o	5e990b9269f03d3
+4301	15226	1779202933654035727	_deps/glfw-build/src/CMakeFiles/glfw.dir/x11_window.c.o	1feed6edcb0f0221
+15227	16112	1779202944579982127	_deps/glfw-build/src/libglfw3.a	f95bfeab5ae17ed2
+6	18176	1779202929359708691	_deps/spdlog-build/CMakeFiles/spdlog.dir/src/cfg.cpp.o	b0dd943773cdb452
+4	19455	1779202929357056867	_deps/spdlog-build/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o	3db3ef2e459903eb
+5	20831	1779202929359162453	_deps/spdlog-build/CMakeFiles/spdlog.dir/src/async.cpp.o	df68656d1aad57e7
+4	25341	1779202929358103473	_deps/spdlog-build/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o	61461ef12dec7c8f
+5	27032	1779202929358588284	_deps/spdlog-build/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o	b558a9a35ee98fbe
+6	37835	1779202929360056853	_deps/spdlog-build/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o	835015c8c744ebfd
+14795	41324	1779202944147984242	CMakeFiles/orbital1.dir/src/sim/SimulationEngine.cpp.o	4aa95bbf77abca31
+3	49863	1779202929356056872	_deps/spdlog-build/CMakeFiles/spdlog.dir/src/spdlog.cpp.o	51e492f2778781cc

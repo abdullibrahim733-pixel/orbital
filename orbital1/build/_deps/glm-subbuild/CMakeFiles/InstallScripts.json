@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/cto22/Projects/orbital/orbital1/build/_deps/glm-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
