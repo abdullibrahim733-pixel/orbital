@@ -1,7 +1,7 @@
-# SIAFU-OS
+# orbital
 ## Autonomous Swarm Robotics Operating System
 
-SIAFU-OS is a distributed swarm robotics mission-control platform designed for managing autonomous agricultural robots over WiFi networks.
+orbital is a distributed swarm robotics mission-control platform designed for managing autonomous agricultural robots over WiFi networks.
 
 The system provides:
 - real-time swarm telemetry
@@ -11,9 +11,9 @@ The system provides:
 - OTA firmware deployment
 - zone monitoring
 - emergency control systems
-- mission scripting through `.siafu` files
+- mission scripting through `.orbital` files
 
-SIAFU-OS is engineered as:
+orbital is engineered as:
 - a robotics infrastructure platform
 - a distributed systems project
 - an advanced modern C++ backend engine
@@ -31,7 +31,7 @@ Modern agriculture will increasingly depend on:
 - intelligent mission scheduling
 - live telemetry infrastructure
 
-SIAFU-OS explores how decentralized robotic systems can coordinate, monitor, and execute agricultural tasks efficiently through a scalable mission-control architecture.
+orbital explores how decentralized robotic systems can coordinate, monitor, and execute agricultural tasks efficiently through a scalable mission-control architecture.
 
 ---
 
@@ -107,23 +107,23 @@ via:
 
 ---
 
-# `.siafu` Mission Files
+# `.orbital` Mission Files
 
 Custom mission scripting language.
 
 Example:
 
-```siafu
+```orbital
 MISSION FieldAlpha
 
 ZONE NORTH_FIELD
 BOUNDS 0 0 100 100
 
-ROBOT SIAFU-01
+ROBOT orbital-01
 TASK PLANT
 TARGET NORTH_FIELD
 
-ROBOT SIAFU-02
+ROBOT orbital-02
 TASK WEED_REMOVE
 TARGET NORTH_FIELD
 ```
@@ -147,7 +147,7 @@ Mission files allow:
                     WebSockets
                           │
                 ┌─────────▼──────────┐
-                │  SIAFU C++ Engine  │
+                │  orbital C++ Engine│
                 │ Mission Runtime    │
                 │ Swarm Controller   │
                 │ Telemetry Core     │
@@ -155,12 +155,12 @@ Mission files allow:
                           │
                      WiFi / LAN
                           │
-      ┌───────────────────┼───────────────────┐
-      │                   │                   │
-┌─────▼─────┐      ┌─────▼─────┐      ┌─────▼─────┐
-│ SIAFU-01  │      │ SIAFU-02  │      │ SIAFU-03  │
-│ ESP32 Bot │      │ ESP32 Bot │      │ ESP32 Bot │
-└───────────┘      └───────────┘      └───────────┘
+       ┌───────────────────┼───────────────────┐
+       │                   │                   │
+ ┌─────▼─────┐      ┌─────▼─────┐      ┌─────▼─────┐
+ │ orbital-01│      │ orbital-02│      │ orbital-03│
+ │ ESP32 Bot │      │ ESP32 Bot │      │ ESP32 Bot │
+ └───────────┘      └───────────┘      └───────────┘
 ```
 
 ---
@@ -202,7 +202,7 @@ Mission files allow:
 
 # Advanced Engineering Concepts
 
-SIAFU-OS is designed to teach and demonstrate:
+orbital is designed to teach and demonstrate:
 
 ## Systems Programming
 - distributed systems
@@ -229,7 +229,7 @@ SIAFU-OS is designed to teach and demonstrate:
 # Repository Structure
 
 ```text
-siafu-os/
+orbital/
 ├── backend/
 ├── frontend/
 ├── firmware/
@@ -250,7 +250,7 @@ The first production milestone includes:
 ✅ robot tracking  
 ✅ WebSocket communication  
 ✅ mission assignment  
-✅ `.siafu` parser  
+✅ `.orbital` parser  
 ✅ telemetry visualization  
 ✅ emergency stop system  
 ✅ OTA updates  
@@ -292,8 +292,8 @@ sudo pacman -S cmake ninja gcc git gdb ccache
 # Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/siafu-os.git
-cd siafu-os
+git clone https://github.com/yourusername/orbital.git
+cd orbital
 ```
 
 ---
@@ -313,7 +313,7 @@ ninja
 # Run Backend
 
 ```bash
-./siafu-engine
+./orbital-engine
 ```
 
 ---
@@ -371,7 +371,7 @@ Simulation and replay system
 
 # Why This Project Exists
 
-SIAFU-OS is designed to explore how low-cost robotics infrastructure can improve:
+orbital is designed to explore how low-cost robotics infrastructure can improve:
 - precision agriculture
 - automation accessibility
 - autonomous farming systems
@@ -397,7 +397,7 @@ Future versions may include:
 
 # Engineering Philosophy
 
-SIAFU-OS is not designed as:
+orbital is not designed as:
 - a toy robot controller
 - a basic IoT dashboard
 - a simple ESP32 app
