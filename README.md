@@ -1,6 +1,444 @@
-# orbital
+# SIAFU-OS
+## Autonomous Swarm Robotics Operating System
 
-**A Software-in-the-loop (SITL) simulation engine for autonomous asteroid mining operation**
+SIAFU-OS is a distributed swarm robotics mission-control platform designed for managing autonomous agricultural robots over WiFi networks.
 
-## The Mission
-orbital1 is an engineering tool design to bridge the gap between orbital mechanics theory and autonomous robotics execution instead of building a game this project serves as a testing environment for rover flight-control logic allowing developers to 
+The system provides:
+- real-time swarm telemetry
+- mission assignment
+- robot fleet management
+- live ESP32 camera streaming
+- OTA firmware deployment
+- zone monitoring
+- emergency control systems
+- mission scripting through `.siafu` files
+
+SIAFU-OS is engineered as:
+- a robotics infrastructure platform
+- a distributed systems project
+- an advanced modern C++ backend engine
+- a real-time telemetry dashboard
+- a foundation for future autonomous agricultural robotics
+
+---
+
+# Vision
+
+Modern agriculture will increasingly depend on:
+- autonomous robotic fleets
+- precision farming
+- distributed sensor systems
+- intelligent mission scheduling
+- live telemetry infrastructure
+
+SIAFU-OS explores how decentralized robotic systems can coordinate, monitor, and execute agricultural tasks efficiently through a scalable mission-control architecture.
+
+---
+
+# Core Features
+
+# Swarm Mission Control
+
+Manage multiple robots simultaneously:
+- assign missions
+- monitor status
+- coordinate tasks
+- deploy updates
+- track positions live
+
+---
+
+# Real-Time Telemetry
+
+Each robot streams:
+- coordinates
+- battery status
+- WiFi signal strength
+- current task
+- temperature
+- uptime
+- mission progress
+
+---
+
+# Live Swarm Map
+
+Visualize:
+- robot positions
+- movement trails
+- active zones
+- restricted zones
+- mission regions
+
+---
+
+# Emergency Control System
+
+Industrial-grade safety controls:
+- global emergency stop
+- robot isolation
+- connection monitoring
+- out-of-zone alerts
+- mission abort system
+
+---
+
+# OTA Update System
+
+Push updates simultaneously to all robots:
+- firmware updates
+- mission scripts
+- configuration changes
+- networking settings
+
+---
+
+# ESP32 Camera Streaming
+
+Each robot can stream:
+- live field video
+- navigation feed
+- operational monitoring
+
+via:
+- WiFi
+- MJPEG streams
+- browser dashboard
+
+---
+
+# `.siafu` Mission Files
+
+Custom mission scripting language.
+
+Example:
+
+```siafu
+MISSION FieldAlpha
+
+ZONE NORTH_FIELD
+BOUNDS 0 0 100 100
+
+ROBOT SIAFU-01
+TASK PLANT
+TARGET NORTH_FIELD
+
+ROBOT SIAFU-02
+TASK WEED_REMOVE
+TARGET NORTH_FIELD
+```
+
+Mission files allow:
+- reusable swarm operations
+- automation
+- fleet coordination
+- reproducible tasks
+
+---
+
+# System Architecture
+
+```text
+                ┌────────────────────┐
+                │ Browser Dashboard  │
+                │ React + Tailwind   │
+                └─────────┬──────────┘
+                          │
+                    WebSockets
+                          │
+                ┌─────────▼──────────┐
+                │  SIAFU C++ Engine  │
+                │ Mission Runtime    │
+                │ Swarm Controller   │
+                │ Telemetry Core     │
+                └─────────┬──────────┘
+                          │
+                     WiFi / LAN
+                          │
+      ┌───────────────────┼───────────────────┐
+      │                   │                   │
+┌─────▼─────┐      ┌─────▼─────┐      ┌─────▼─────┐
+│ SIAFU-01  │      │ SIAFU-02  │      │ SIAFU-03  │
+│ ESP32 Bot │      │ ESP32 Bot │      │ ESP32 Bot │
+└───────────┘      └───────────┘      └───────────┘
+```
+
+---
+
+# Technology Stack
+
+# Backend Engine
+- C++20
+- WebSockets
+- EnTT ECS
+- CrowCPP / Drogon
+- multithreading
+- JSON serialization
+
+---
+
+# Frontend Dashboard
+- React
+- TypeScript
+- TailwindCSS
+- Vite
+
+---
+
+# Firmware
+- ESP32
+- PlatformIO
+- AsyncTCP
+- ESPAsyncWebServer
+
+---
+
+# Networking
+- WiFi LAN
+- WebSockets
+- OTA update pipeline
+
+---
+
+# Advanced Engineering Concepts
+
+SIAFU-OS is designed to teach and demonstrate:
+
+## Systems Programming
+- distributed systems
+- asynchronous networking
+- multithreading
+- telemetry infrastructure
+
+## Advanced C++
+- ECS architecture
+- RAII
+- move semantics
+- smart pointers
+- serialization
+- concurrency
+
+## Robotics Infrastructure
+- mission coordination
+- robot fleet management
+- fail-safe systems
+- OTA firmware deployment
+
+---
+
+# Repository Structure
+
+```text
+siafu-os/
+├── backend/
+├── frontend/
+├── firmware/
+├── missions/
+├── simulations/
+├── docs/
+├── tests/
+└── assets/
+```
+
+---
+
+# Current MVP Scope
+
+The first production milestone includes:
+
+✅ swarm dashboard  
+✅ robot tracking  
+✅ WebSocket communication  
+✅ mission assignment  
+✅ `.siafu` parser  
+✅ telemetry visualization  
+✅ emergency stop system  
+✅ OTA updates  
+✅ ESP32 connectivity  
+✅ live camera streams  
+
+---
+
+# NOT Included In MVP
+
+To avoid overengineering, the MVP intentionally excludes:
+
+❌ AI weed detection  
+❌ SLAM mapping  
+❌ ROS2 integration  
+❌ advanced autonomy  
+❌ cloud infrastructure  
+❌ machine learning  
+❌ drone coordination  
+
+These systems may be explored in future versions.
+
+---
+
+# Installation
+
+# Backend
+
+## Requirements
+
+### Arch Linux
+
+```bash
+sudo pacman -S cmake ninja gcc git gdb ccache
+```
+
+---
+
+# Clone Repository
+
+```bash
+git clone https://github.com/yourusername/siafu-os.git
+cd siafu-os
+```
+
+---
+
+# Build Backend
+
+```bash
+mkdir build
+cd build
+
+cmake -G Ninja ..
+ninja
+```
+
+---
+
+# Run Backend
+
+```bash
+./siafu-engine
+```
+
+---
+
+# Frontend Setup
+
+```bash
+cd frontend
+
+npm install
+npm run dev
+```
+
+Frontend runs at:
+
+```text
+http://localhost:5173
+```
+
+---
+
+# ESP32 Firmware
+
+## Robot Core
+
+```bash
+cd firmware/robot-core
+pio run
+pio run --target upload
+```
+
+---
+
+# Development Goals
+
+# Phase 1
+Core engine + dashboard
+
+# Phase 2
+Networking + telemetry
+
+# Phase 3
+Mission runtime + parser
+
+# Phase 4
+Swarm coordination
+
+# Phase 5
+OTA + live streams
+
+# Phase 6
+Simulation and replay system
+
+---
+
+# Why This Project Exists
+
+SIAFU-OS is designed to explore how low-cost robotics infrastructure can improve:
+- precision agriculture
+- automation accessibility
+- autonomous farming systems
+- distributed robotics coordination
+
+especially in environments where scalable industrial robotics systems remain inaccessible.
+
+---
+
+# Long-Term Vision
+
+Future versions may include:
+- AI crop analysis
+- autonomous navigation
+- computer vision
+- swarm intelligence
+- ROS2 interoperability
+- cloud mission synchronization
+- GPS-assisted geofencing
+- autonomous charging systems
+
+---
+
+# Engineering Philosophy
+
+SIAFU-OS is not designed as:
+- a toy robot controller
+- a basic IoT dashboard
+- a simple ESP32 app
+
+It is designed as:
+- robotics infrastructure
+- mission-control software
+- a scalable distributed systems platform
+
+The robots are replaceable.
+
+The infrastructure is the product.
+
+---
+
+# Screenshots
+
+> Screenshots, diagrams, telemetry views, and robot demonstrations will be added as development progresses.
+
+---
+
+# Contributing
+
+Contributions, feedback, and architecture discussions are welcome.
+
+---
+
+# License
+
+MIT License
+
+---
+
+# Author
+
+Developed by Ibrahim under Version Extreme Cooperation.
+
+Focused on:
+- robotics
+- distributed systems
+- agricultural automation
+- embedded systems
+- swarm intelligence
+- autonomous infrastructure
